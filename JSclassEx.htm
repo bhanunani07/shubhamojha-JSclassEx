@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                               //thapa technical
+    class Students{
+           constructor(name,age,cls)
+           {
+             this.myname = name;  // this.name = name;
+             this.age = age;
+             this.mycls = cls;
+           }
+
+           biodata(){
+            console.log(`hi your name is  ${this.myname}. I am ${this.age} years old and I am in class ${this.mycls}   ` );
+            document.write(`hi your name is  ${this.myname}. I am ${this.age} years old and I am in class ${this.mycls} ` );
+            
+        }
+    }
+
+
+    let obj1 = new Students("shubham",22,"tenth");
+    obj1.biodata();
+
+
+    // class Player extends Students{
+    //     constructor(name,age,cls,game){
+    //         super(name,age,cls,game);
+        
+    //         this.game = game ;
+    //     }
+    
+    //      play_biodata(){
+       
+    //         document.write(`hi your name is  ${this.myname}. I am ${this.age} years old and I am in class ${this.mycls} and like game ${this.game} `);
+    //         document.write("<br>");
+    //         document.write(`${super.biodata()} like game ${this.game} ` );
+    //        }
+
+    //     }
+
+    // let obj1 = new Player("shubham",22,"tenth","cricket");     
+    // let obj2 = new Player("ram",23,"fifth","football");
+
+
+    // obj1.play_biodata();
+    // document.write("<br>");
+    // obj1.biodata();
+    // document.write("<br>");  
+    // obj2.play_biodata();
+    // document.write("<br>");
+    // obj2.biodata();
+    
+        /*
+        class Students{
+            Hello(){
+                    document.write("hello how are u ");
+            }
+
+            Bye(a){
+                document.write("bye " +a);
+            }
+    }
+
+        let obj1 = new Students();  // var obj = new classname();
+        obj1.Hello();
+        document.write("<br>");
+        obj1.Bye("ram");
+    */
+    </script>
+</body>
+</html>
